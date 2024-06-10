@@ -3,9 +3,13 @@
 
 :root {
   --primary-color: #fe2c55;
+  // default header height;
+  --default-header-height: 60px;
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 html {
@@ -18,4 +22,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
+  padding-right: 24px;
+  padding-left: 16px;
 }

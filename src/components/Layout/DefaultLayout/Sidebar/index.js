@@ -1,5 +1,8 @@
+import classNames from 'classnames';
+import styles from './Sidebar.module.scss';
+
 function Sidebar() {
-  return <h2>Sidebar</h2>;
+  return <aside className={styles.wrapper}>Sidebar</aside>;
 }
 
 export default Sidebar;
