@@ -1,12 +1,79 @@
 .wrapper {
   height: var(--default-header-height, 60px);
+  --search-height: 50px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12); /* Sửa lỗi tại đây */
   display: flex;
   justify-content: center;
   width: 100%;
+  padding-left: var(--default-padding-left, 16px);
+  padding-right: var(--default-padding-right, 24px);
 }
 .content {
   height: 100%;
   width: 100%;
-  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+}
+.search {
+  position: relative;
+  background-color: #1618230f;
+  border: 1.5px solid transparent;
+  width: 500px;
+  height: 50px;
+  border-color: #16182333;
+  border-radius: 92px;
+  line-height: 21px;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  padding-left: 16px;
+  input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    width: 431px;
+    height: 100%;
+
+    outline: none;
+    color: var(--black);
+  }
+  &:focus-within,
+  &:hover {
+    border: 1.5px solid rgba(22, 24, 35, 0.2);
+  }
+}
+.close,
+.loading {
+  color: #a6a7ab;
+  position: absolute;
+  right: 52px;
+  transform: translateY(90%);
+  padding-right: 17px;
+}
+.search-btn {
+  width: 52px;
+  height: 100%;
+  border-top-right-radius: 92px;
+  border-bottom-right-radius: 92px;
+  position: relative;
+  font-size: 1.8rem;
+  color: rgba(22, 24, 35, 0.34);
+
+  &:hover {
+    background-color: #e4e4e6;
+    cursor: pointer;
+    color: #161823;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 9px;
+    right: 52px;
+    height: calc(var(--search-height) - 18px);
+    width: 1px;
+    background-color: rgba(22, 24, 35, 0.12);
+  }
 }

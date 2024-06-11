@@ -1,4 +1,6 @@
 .wrapper {
-    width: 240px;
-    min-height: 100px;
+  width: 240px;
+  min-height: 100px;
+  padding-left: var(--default-padding-left, 16px);
+  padding-right: var(--default-padding-right, 24px);
 }

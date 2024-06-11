@@ -5,6 +5,12 @@
   --primary-color: #fe2c55;
   // default header height;
   --default-header-height: 60px;
+  --default-padding-right: 24px;
+  --default-padding-left: 16px;
+
+  //color
+  --black: #000;
+  --text-color: #333;
 }
 
 * {
@@ -22,6 +28,14 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
-  padding-right: 24px;
-  padding-left: 16px;
+}
+button,
+input,
+[tabindex] {
+  outline: none;
+  border: none;
+}
+a[href] {
+  text-decoration: none;
+  color: var(--text-color);
 }
